@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/new_img5"
+    android:orientation="vertical"
+    tools:context=".LoginActivity" >
+	    <EditText
+        android:id="@+id/et_useraccount"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="230dp"
+        android:drawableLeft="@drawable/person"
+        android:hint="       请输入账号"
+        android:singleLine="true"
+        android:textColor="#f1f1f1"
+        android:textColorHint="#c1cde0" />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="290dp"
+        android:drawableLeft="@drawable/lock"
+        android:hint="       请输入密码"
+        android:inputType="textPassword"
+        android:singleLine="true"
+        android:textColor="#f1f1f1"
+        android:textColorHint="#c1cde0" />
+
+    <Button
+        android:id="@+id/bt_login"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="380dp"
+        android:background="@drawable/regiter_button_selector"
+        android:text="登  陆"
+        android:textColor="@drawable/register_button_textcolor_selector"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/bt_register"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/bt_login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/regiter_button_selector"
+        android:text="注  册"
+        android:textColor="@drawable/register_button_textcolor_selector"
+        android:textSize="18sp" />
+    
+    <Button
+        android:id="@+id/bt_forget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" 忘记密码?"
+        android:textColor="#f1f1f1"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/bt_register"
+        android:layout_marginTop="15dp"/>
+
+</RelativeLayout>

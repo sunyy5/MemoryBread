@@ -1,0 +1,168 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddTimingAxisActivity" >
+
+    <LinearLayout
+        android:id="@+id/label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/time_contest"
+                android:layout_width="40dp"
+                android:layout_height="72dp"
+                android:layout_weight="1"
+                android:background="@drawable/time_contest" />
+
+            <ImageButton
+                android:id="@+id/time_dinner"
+                android:layout_width="40dp"
+                android:layout_height="72dp"
+                android:layout_weight="1"
+                android:background="@drawable/time_dinner" />
+
+            <ImageButton
+                android:id="@+id/time_exam"
+                android:layout_width="40dp"
+                android:layout_height="72dp"
+                android:layout_centerHorizontal="true"
+                android:layout_weight="1"
+                android:background="@drawable/time_exam" />
+
+            <ImageButton
+                android:id="@+id/time_exp"
+                android:layout_width="40dp"
+                android:layout_height="72dp"
+                android:layout_weight="1"
+                android:background="@drawable/time_exp" />
+
+            <ImageButton
+                android:id="@+id/time_travel"
+                android:layout_width="40dp"
+                android:layout_height="72dp"
+                android:layout_weight="1"
+                android:background="@drawable/time_travel" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/time_email"
+                android:layout_width="40dp"
+                android:layout_height="72dp"
+                android:layout_weight="1"
+                android:background="@drawable/time_email" />
+
+            <ImageButton
+                android:id="@+id/time_meeting"
+                android:layout_width="40dp"
+                android:layout_height="72dp"
+                android:layout_weight="1"
+                android:background="@drawable/time_meeting" />
+
+            <ImageButton
+                android:id="@+id/time_interview"
+                android:layout_width="40dp"
+                android:layout_height="72dp"
+                android:layout_centerHorizontal="true"
+                android:layout_weight="1"
+                android:background="@drawable/time_interview" />
+
+            <ImageButton
+                android:id="@+id/time_date"
+                android:layout_width="40dp"
+                android:layout_height="72dp"
+                android:layout_weight="1"
+                android:background="@drawable/time_date" />
+
+            <ImageButton
+                android:id="@+id/time_others"
+                android:layout_width="40dp"
+                android:layout_height="72dp"
+                android:layout_weight="1"
+                android:background="@drawable/time_others" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/time_table"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/label"
+        android:layout_marginTop="15dp" >
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:text="时间："
+                android:textColor="#424847"
+                android:textSize="20sp" >
+            </TextView>
+
+            <DatePicker
+                android:id="@+id/datePicker"
+                style="@style/AppTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:calendarViewShown="false" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:text="备注："
+                android:textColor="#424847"
+                android:textSize="20sp" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/editText1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:lines="1" >
+
+                <requestFocus />
+            </EditText>
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/time_save"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/time_table"
+        android:layout_centerHorizontal="true"
+        android:text="保存" />
+
+    <ImageView
+        android:layout_centerHorizontal="true"
+        android:id="@+id/time_imgview"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_below="@id/time_save"/>
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">记忆面包</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_recite">ReciteActivity</string>
+    <string name="title_activity_add">AddActivity</string>
+    <string name="title_activity_me">MeActivity</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="title_activity_welcome">Welcome</string>
+    <string name="title_activity_recite_list">ReciteListActivity</string>
+    <string name="del_confirm">是否删除成员：%1$s ？</string>
+    <string name="title_activity_a">AActivity</string>
+    <string name="title_activity_add_project">AddProjectActivity</string>
+    <string name="title_activity_forget">ForgetActivity</string>
+
+</resources>
