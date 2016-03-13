@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f1f1"
+    tools:context=".MainActivity" >
+	<ImageView 
+	    android:id="@+id/main_title"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/mainbackground"/>
+    <ImageButton
+        android:id="@+id/main_head"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/head" />
+
+    <TextView
+        android:id="@+id/main_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="110dp"
+        android:layout_toRightOf="@id/main_head"
+        android:text="White Smith"
+        android:textColor="#f1f1f1"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/title1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main_name"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/main_head"
+        android:text="待办事项："
+        android:textColor="#f1f1f1"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main_title"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/bt_recite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="0.2dp"
+            android:layout_weight="1"
+            android:background="@drawable/main_button_selector"
+            android:text="背 诵"
+            android:textColor="@drawable/main_button_textcolor_selector"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/bt_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0.2dp"
+            android:layout_weight="1"
+            android:background="@drawable/main_button_selector"
+            android:text="设 置"
+            android:textColor="@drawable/main_button_textcolor_selector"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/bt_add"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/add2"
+        android:textSize="30sp" />
+
+    <com.example.memorybread.ReFlashListView
+        android:id="@+id/listView_projects"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout1"
+        android:divider="@null" />
+
+</RelativeLayout>

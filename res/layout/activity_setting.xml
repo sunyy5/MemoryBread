@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/final5"
+    tools:context=".SettingActivity" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="设置每日提醒时间"
+        android:textColor="#f1f1f1"
+        android:textSize="20sp" />
+
+    <TimePicker
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="56dp" />
+
+    <Button
+        android:id="@+id/bt_setTime"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/time"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/regiter_button_selector"
+        android:text="返  回"
+        android:textColor="@drawable/register_button_textcolor_selector"
+        android:textSize="20sp" />
+
+    <CheckBox
+        android:id="@+id/check1"
+        android:layout_below="@id/bt_setTime"
+        android:layout_alignRight="@id/bt_setTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="确认"
+        android:textColor="#f1f1f1" />
+
+</RelativeLayout>

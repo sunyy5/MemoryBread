@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.memorybread"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+	<uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo5"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+      
+        <activity
+            android:name="com.example.memorybread.Welcome"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.memorybread.LoginActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.memorybread.MainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="com.example.memorybread.SettingsActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.memorybread.ReciteActivity"
+            android:label="背诵" >
+        </activity>
+        <activity
+            android:name="com.example.memorybread.AddActivity"
+            android:label="添加"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="com.example.memorybread.SettingActivity"
+            android:label="设置" >
+        </activity>
+        <activity
+            android:name="com.example.memorybread.RegisterActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.memorybread.ReciteListActivity"
+            android:label="背诵列表"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="com.example.memorybread.AActivity"
+            android:label="@string/title_activity_a" >
+        </activity>
+        <activity
+            android:name="com.example.memorybread.AddProjectActivity"
+            android:label="项目信息" >
+        </activity>
+        <activity
+            android:name="com.example.memorybread.ForgetActivity"
+            android:label="忘记密码" >
+        </activity>
+        <activity
+            android:name="com.example.memorybread.InfoActivity"
+            android:label="基本信息" >
+        </activity>
+        <activity
+            android:name="com.example.memorybread.InfoUpdateActivity"
+            android:label="设置基本信息" >
+        </activity>
+        
+        <service android:name=".HelloIntentService"></service>
+    </application>
+
+</manifest>
